@@ -21,7 +21,7 @@ RUN curl -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/st
     apt update && apt install -y \
       helm \
       google-cloud-cli \
-      google-cloud-sdk-gke-gcloud-auth-plugin
+      google-cloud-sdk-gke-gcloud-auth-plugin \
     && rm -rf /var/cache/apt/archives /var/lib/apt/lists/* && \
     kubectl completion bash | tee /etc/bash_completion.d/kubectl > /dev/null && \
     helm completion bash | tee /etc/bash_completion.d/helm > /dev/null
