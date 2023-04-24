@@ -8,6 +8,7 @@ RUN apt update && \
       ca-certificates \
       curl \
       gnupg \
+      git \
       nano \
     && rm -rf /var/cache/apt/archives /var/lib/apt/lists/*
 
